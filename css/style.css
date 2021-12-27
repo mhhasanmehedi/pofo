@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 14px 0;
+}
+
+.container {
+  width: 1160px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo {
+  flex-basis: 20%;
+  max-width: 20%;
+}
+
+nav {
+  flex-basis: 80%;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  position: relative;
+  list-style-type: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  position: absolute;
+  content: "]";
+  right: 7px;
+  bottom: 50%;
+  transform: translateY(50%);
+  opacity: 0;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+nav ul li::before {
+  position: absolute;
+  content: "[";
+  left: 7px;
+  bottom: 50%;
+  transform: translateY(50%);
+  opacity: 0;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+nav ul li:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+nav ul li:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: top;
+}
+.section-one {
+  background-image: url(../images/portfolio-item57.jpg);
+}
+
+.section-two {
+  background-image: url(../images/portfolio-item58.jpg);
+}
+
+.section-three {
+  background-image: url(../images/portfolio-item59.jpg);
+}
+
+.section-four {
+  background-image: url(../images/portfolio-item60.jpg);
+}
+
+.section-five {
+  background-image: url(../images/portfolio-item61.jpg);
+}
+
+h1 {
+  font-size: 45px;
+  color: #f3eded;
+  background: #ff2121;
+  max-width: 408px;
+  margin: auto;
+  padding: 17px 10px;
+  text-align: center;
+}
